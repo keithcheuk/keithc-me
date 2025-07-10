@@ -1,13 +1,15 @@
 import React from 'react';
 import { ExternalLink, Download, Clapperboard, X, FileText, Mail, Linkedin } from 'lucide-react';
 import { 
-  SiAutodeskmaya, 
-  SiBlender, 
-  SiAdobe, 
+  SiAutodeskmaya,
+  SiKatana,
+  SiNuke,
+  SiBlender,
   SiCinema4D,
   SiUnrealengine,
-  SiUnity
+  SiHoudini
 } from 'react-icons/si';
+import { LuCone } from "react-icons/lu";
 import { TbBrandMaya } from 'react-icons/tb';
 import { credits } from './credits';
 
@@ -207,45 +209,48 @@ function App() {
             Driving Visual Storytelling Through Technology
           </h2>
           <p className="text-xl text-white/70 leading-relaxed mb-8">
-            From superhero adventures to heartwarming animated tales, I've had the privilege 
-            of contributing to some of cinema's most beloved stories. My passion lies in 
-            seamlessly blending practical and digital elements to create believable, 
-            emotionally resonant visual experiences.
+            I've spent half my life doodling pixels on a computer, ever since I got my hands on a copy of Photoshop in 2000, and how I rushed home to recreate the bullet-time effect from The Matrix after seeing it in the cinema. Visual storytelling has been my passion ever since. I'm honoured to have worked with hundreds of the most talented artists around the world to help bring some of the most iconic films of the past decade to life.
           </p>
           <div className="select-none flex flex-wrap justify-center gap-6">
             <div className="flex items-center space-x-3 px-4 py-3 bg-white/10 rounded-full text-white/80 hover:text-white hover:bg-white/15 transition-all duration-300">
-              <SiAutodeskmaya size={24} className="text-orange-400 select-none pointer-events-none" />
-              <span className="text-sm font-medium">Maya</span>
+              <SiKatana size={24} className="text-yellow-400 select-none pointer-events-none" />
+              <span className="text-sm font-medium">Katana</span>
             </div>
             <div className="flex items-center space-x-3 px-4 py-3 bg-white/10 rounded-full text-white/80 hover:text-white hover:bg-white/15 transition-all duration-300">
-              <SiAutodeskmaya size={24} className="text-red-400 select-none pointer-events-none" />
-              <span className="text-sm font-medium">Houdini</span>
+              <LuCone size={24} className="text-yellow-400 select-none pointer-events-none" />
+              <span className="text-sm font-medium">Arnold</span>
             </div>
             <div className="flex items-center space-x-3 px-4 py-3 bg-white/10 rounded-full text-white/80 hover:text-white hover:bg-white/15 transition-all duration-300">
-              <div className="w-6 h-6 bg-gradient-to-br from-blue-400 to-purple-500 rounded flex items-center justify-center">
-                <span className="text-white text-xs font-bold select-none pointer-events-none">Nu</span>
-              </div>
+              <SiHoudini size={24} className="text-red-400 select-none pointer-events-none" />
+              <span className="text-sm font-medium">Houdini Solaris</span>
+            </div>
+            <div className="flex items-center space-x-3 px-4 py-3 bg-white/10 rounded-full text-white/80 hover:text-white hover:bg-white/15 transition-all duration-300">
+              <SiKatana size={24} className="text-yellow-400 select-none pointer-events-none" />
+              <span className="text-sm font-medium">Renderman</span>
+            </div>
+            <div className="flex items-center space-x-3 px-4 py-3 bg-white/10 rounded-full text-white/80 hover:text-white hover:bg-white/15 transition-all duration-300">
+              <SiHoudini size={24} className="text-yellow-400 select-none pointer-events-none" />
+              <span className="text-sm font-medium">Karma</span>
+            </div>
+            <div className="flex items-center space-x-3 px-4 py-3 bg-white/10 rounded-full text-white/80 hover:text-white hover:bg-white/15 transition-all duration-300">
+              <SiNuke size={24} className="text-yellow-400 select-none pointer-events-none" />
               <span className="text-sm font-medium">Nuke</span>
             </div>
             <div className="flex items-center space-x-3 px-4 py-3 bg-white/10 rounded-full text-white/80 hover:text-white hover:bg-white/15 transition-all duration-300">
-              <SiAdobe size={24} className="text-purple-400 select-none pointer-events-none" />
-              <span className="text-sm font-medium">After Effects</span>
-            </div>
-            <div className="flex items-center space-x-3 px-4 py-3 bg-white/10 rounded-full text-white/80 hover:text-white hover:bg-white/15 transition-all duration-300">
-              <SiBlender size={24} className="text-orange-500 select-none pointer-events-none" />
-              <span className="text-sm font-medium">Blender</span>
+              <SiAutodeskmaya size={24} className="text-blue-400 select-none pointer-events-none" />
+              <span className="text-sm font-medium">Maya</span>
             </div>
             <div className="flex items-center space-x-3 px-4 py-3 bg-white/10 rounded-full text-white/80 hover:text-white hover:bg-white/15 transition-all duration-300">
               <SiCinema4D size={24} className="text-blue-400 select-none pointer-events-none" />
               <span className="text-sm font-medium">Cinema 4D</span>
             </div>
             <div className="flex items-center space-x-3 px-4 py-3 bg-white/10 rounded-full text-white/80 hover:text-white hover:bg-white/15 transition-all duration-300">
-              <SiUnrealengine size={24} className="text-cyan-400 select-none pointer-events-none" />
-              <span className="text-sm font-medium">Unreal Engine</span>
+              <SiBlender size={24} className="text-orange-500 select-none pointer-events-none" />
+              <span className="text-sm font-medium">Blender</span>
             </div>
             <div className="flex items-center space-x-3 px-4 py-3 bg-white/10 rounded-full text-white/80 hover:text-white hover:bg-white/15 transition-all duration-300">
-              <SiUnity size={24} className="text-gray-300 select-none pointer-events-none" />
-              <span className="text-sm font-medium">Unity</span>
+              <SiUnrealengine size={24} className="text-cyan-400 select-none pointer-events-none" />
+              <span className="text-sm font-medium">Unreal Engine</span>
             </div>
           </div>
         </div>
@@ -317,8 +322,8 @@ function App() {
                 <h3 className="text-2xl font-bold text-gray-800 text-center">Keith Cheuk - Resume</h3>
                 <div className="flex justify-center mt-2">
                   <a
-                    href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
-                    download="Keith_Cheuk_Resume.pdf"
+                    href="/cv-keith-cheuk-2025.pdf"
+                    download="/cv-keith-cheuk-2025.pdf"
                     className="flex items-center space-x-2 text-purple-600 hover:text-purple-700 text-sm transition-colors"
                   >
                     <Download size={16} />
@@ -328,7 +333,7 @@ function App() {
               </div>
               <div className="flex-1">
                 <iframe
-                  src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+                  src="/cv-keith-cheuk-2025.pdf"
                   className="w-full h-full border-0"
                   title="Keith Cheuk Resume"
                 />
