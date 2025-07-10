@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Thin Gallery Styles */
+.thin-gallery-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.thin-gallery-item {
+  transition: all 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  border-right: 1px solid rgba(107, 114, 128, 0.3);
+}
+
+/* Default state - all images share equal space */
+.thin-gallery-item {
+  flex: 1;
+  min-width: 0;
+}
+
+/* On hover, the hovered item takes more space */
+.thin-gallery-item:hover {
+  flex: 8; /* Takes 8 times more space than others */
+  z-index: 10;
+}
+
+/* When container is hovered, non-hovered items shrink */
+.thin-gallery-container:hover .thin-gallery-item:not(:hover) {
+  flex: 0.5; /* Much smaller flex value */
+  opacity: 0.7;
+}
+
+.thin-gallery-item:hover .thin-gallery-label {
+  opacity: 1;
+}
+
+/* Images fill their containers properly */
+.thin-gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.thin-gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Label styling */
+.thin-gallery-label {
+  transition: all 0.4s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .thin-gallery-item:hover {
+    flex: 6;
+  }
+  
+  .thin-gallery-container:hover .thin-gallery-item:not(:hover) {
+    flex: 0.3;
+  }
+}
+
+@media (max-width: 768px) {
+  .thin-gallery-item:hover {
+    flex: 5;
+  }
+  
+  .thin-gallery-container:hover .thin-gallery-item:not(:hover) {
+    flex: 0.2;
+  }
+}
+
+@media (max-width: 480px) {
+  .thin-gallery-item:hover {
+    flex: 4;
+  }
+  
+  .thin-gallery-container:hover .thin-gallery-item:not(:hover) {
+    flex: 0.1;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4c1d95;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6d28d9;
+}
+
+/* Mobile Gallery Styles - Touch Scrollable */
+.mobile-gallery-scroll {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+.mobile-gallery-slide {
+  min-width: 100vw;
+  height: 100%;
+}
+
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Snap scrolling support */
+.mobile-gallery-scroll {
+  scroll-snap-type: x mandatory;
+}
+
+.mobile-gallery-slide {
+  scroll-snap-align: center;
+}
+
+/* Smooth touch interactions */
+@media (hover: none) and (pointer: coarse) {
+  .mobile-gallery-scroll {
+    scroll-behavior: auto;
+  }
+}
