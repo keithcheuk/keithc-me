@@ -221,15 +221,17 @@ function App() {
               <span className="text-sm font-medium">Arnold</span>
             </div>
             <div className="flex items-center space-x-3 px-4 py-3 bg-white/10 rounded-full text-white/80 hover:text-white hover:bg-white/15 transition-all duration-300">
-              <SiHoudini size={24} className="text-red-400 select-none pointer-events-none" />
+              <SiHoudini size={24} className="text-orange-400 select-none pointer-events-none" />
               <span className="text-sm font-medium">Houdini Solaris</span>
             </div>
             <div className="flex items-center space-x-3 px-4 py-3 bg-white/10 rounded-full text-white/80 hover:text-white hover:bg-white/15 transition-all duration-300">
-              <SiKatana size={24} className="text-yellow-400 select-none pointer-events-none" />
-              <span className="text-sm font-medium">Renderman</span>
+              <div className="w-6 h-6 bg-gradient-to-br from-blue-400 to-blue-500 rounded flex items-center justify-center">
+                <span className="text-white text-xs font-bold select-none pointer-events-none">R</span>
+              </div>
+              <span className="text-sm font-medium">RenderMan</span>
             </div>
             <div className="flex items-center space-x-3 px-4 py-3 bg-white/10 rounded-full text-white/80 hover:text-white hover:bg-white/15 transition-all duration-300">
-              <SiHoudini size={24} className="text-yellow-400 select-none pointer-events-none" />
+              <SiHoudini size={24} className="text-orange-400 select-none pointer-events-none" />
               <span className="text-sm font-medium">Karma</span>
             </div>
             <div className="flex items-center space-x-3 px-4 py-3 bg-white/10 rounded-full text-white/80 hover:text-white hover:bg-white/15 transition-all duration-300">
