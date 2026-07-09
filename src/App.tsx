@@ -324,8 +324,8 @@ function App() {
                 <h3 className="text-2xl font-bold text-gray-800 text-center">Keith Cheuk - Resume</h3>
                 <div className="flex justify-center mt-2">
                   <a
-                    href="/cv-keith-cheuk-2025.pdf"
-                    download="/cv-keith-cheuk-2025.pdf"
+                    href="/cv-keith-cheuk-2026.pdf"
+                    download="/cv-keith-cheuk-2026.pdf"
                     className="flex items-center space-x-2 text-purple-600 hover:text-purple-700 text-sm transition-colors"
                   >
                     <Download size={16} />
@@ -335,7 +335,7 @@ function App() {
               </div>
               <div className="flex-1">
                 <iframe
-                  src="/cv-keith-cheuk-2025.pdf"
+                  src="/cv-keith-cheuk-2026.pdf"
                   className="w-full h-full border-0"
                   title="Keith Cheuk Resume"
                 />
