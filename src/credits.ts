@@ -1,10 +1,10 @@
 export const credits: CreditItem[] = [
-  {
-    id: "moana-2026",
-    title: "Moana (2026)",
-    description: "Lead Lighting TD",
-    imageUrl: "/moana.webp"
-  },
+  // {
+  //   id: "moana-2026",
+  //   title: "Moana (2026)",
+  //   description: "Lead Lighting TD",
+  //   imageUrl: "/moana.webp"
+  // },
   {
     id: "mandalorian-grogu-2026",
     title: "Happy Gilmore 2 (2025)",
